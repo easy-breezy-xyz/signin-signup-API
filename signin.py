@@ -18,7 +18,7 @@ def signin(loc, email, pwd):
         if eml[0] == email:
             if eml[1] == pwd:
                 nded = False
-                resp = (True, eml[2])
+                resp = (True)
             else:
                 resp = False
                 nded = False
