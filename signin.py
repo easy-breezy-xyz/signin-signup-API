@@ -1,3 +1,7 @@
+#!/usr/bin/env python3
+
+import pickle
+
 def signin(loc, email, pwd):
     """
     Sign in and compare data.
