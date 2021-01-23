@@ -8,7 +8,7 @@ def signin(loc, email, pwd):
     File where emails are stored are param loc
     Email is param email
     Password is param pwd
-    Returns (True, data) if account exists and password is correct (data is the account data)
+    Returns True if account exists and password is correct
     Returns False if account exists but password is incorrect
     Returns None if account does not exist
     """
@@ -18,7 +18,7 @@ def signin(loc, email, pwd):
         if eml[0] == email:
             if eml[1] == pwd:
                 nded = False
-                resp = (True)
+                resp = True
             else:
                 resp = False
                 nded = False
