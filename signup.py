@@ -14,7 +14,7 @@ def signup(loc, sname, spwd):
     emails = pickle.load(open(loc, "rb"))
     ok = True
     if ok:
-        email = [str(sname).strip(), str(spwd)]
+        email = [str(sname).strip(), str(spwd), None]
         emails.append(email)
         pickle.dump(emails, open(loc, "wb"))
         msg = True
